@@ -589,19 +589,19 @@ async function showMsg() {
 	
 	if (userIndex2 != -1) {
 		IndexGp2 += 1;
-		ReturnMessageTitle = `【账号${IndexGp2}🆔】${$.nickName || $.UserName}\n`;
+		ReturnMessageTitle = `【${$.nickName || $.UserName}\n`;
 	}
 	if (userIndex3 != -1) {
 		IndexGp3 += 1;
-		ReturnMessageTitle = `【账号${IndexGp3}🆔】${$.nickName || $.UserName}\n`;
+		ReturnMessageTitle = `【${$.nickName || $.UserName}\n`;
 	}
 	if (userIndex4 != -1) {
 		IndexGp4 += 1;
-		ReturnMessageTitle = `【账号${IndexGp4}🆔】${$.nickName || $.UserName}\n`;
+		ReturnMessageTitle = `【${$.nickName || $.UserName}\n`;
 	}
 	if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
 		IndexAll += 1;
-		ReturnMessageTitle = `【账号${IndexAll}🆔】${$.nickName || $.UserName}\n`;
+		ReturnMessageTitle = `【${$.nickName || $.UserName}\n`;
 	}
 
 	if ($.levelName || $.JingXiang){
@@ -742,16 +742,16 @@ async function showMsg() {
 				ReturnMessage += `【东东农场】${$.JdFarmProdName} 可以兑换了!\n`;
 				TempBaipiao += `【东东农场】${$.JdFarmProdName} 可以兑换了!\n`;
 				if (userIndex2 != -1) {
-					ReceiveMessageGp2 += `【账号${IndexGp2} ${$.nickName || $.UserName}】${$.JdFarmProdName} (东东农场)\n`;
+					ReceiveMessageGp2 += `【${$.nickName || $.UserName}】${$.JdFarmProdName} (东东农场)\n`;
 				}
 				if (userIndex3 != -1) {
-					ReceiveMessageGp3 += `【账号${IndexGp3} ${$.nickName || $.UserName}】${$.JdFarmProdName} (东东农场)\n`;
+					ReceiveMessageGp3 += `【${$.nickName || $.UserName}】${$.JdFarmProdName} (东东农场)\n`;
 				}
 				if (userIndex4 != -1) {
-					ReceiveMessageGp4 += `【账号${IndexGp4} ${$.nickName || $.UserName}】${$.JdFarmProdName} (东东农场)\n`;
+					ReceiveMessageGp4 += `【${$.nickName || $.UserName}】${$.JdFarmProdName} (东东农场)\n`;
 				}
 				if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
-					allReceiveMessage += `【账号${IndexAll} ${$.nickName || $.UserName}】${$.JdFarmProdName} (东东农场)\n`;
+					allReceiveMessage += `【${$.nickName || $.UserName}】${$.JdFarmProdName} (东东农场)\n`;
 				}
 			} else {
 				if ($.JdwaterD != 'Infinity' && $.JdwaterD != '-Infinity') {
@@ -766,16 +766,16 @@ async function showMsg() {
 				TempBaipiao += `【东东农场】水果领取后未重新种植!\n`;
 
 				if (userIndex2 != -1) {
-					WarnMessageGp2 += `【账号${IndexGp2} ${$.nickName || $.UserName}】水果领取后未重新种植! (东东农场)\n`;
+					WarnMessageGp2 += `【${$.nickName || $.UserName}】水果领取后未重新种植! (东东农场)\n`;
 				}
 				if (userIndex3 != -1) {
-					WarnMessageGp3 += `【账号${IndexGp3} ${$.nickName || $.UserName}】水果领取后未重新种植! (东东农场)\n`;
+					WarnMessageGp3 += `【${$.nickName || $.UserName}】水果领取后未重新种植! (东东农场)\n`;
 				}
 				if (userIndex4 != -1) {
-					WarnMessageGp4 += `【账号${IndexGp4} ${$.nickName || $.UserName}】水果领取后未重新种植! (东东农场)\n`;
+					WarnMessageGp4 += `【${$.nickName || $.UserName}】水果领取后未重新种植! (东东农场)\n`;
 				}
 				if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
-					allWarnMessage += `【账号${IndexAll} ${$.nickName || $.UserName}】水果领取后未重新种植! (东东农场)\n`;
+					allWarnMessage += `【${$.nickName || $.UserName}】水果领取后未重新种植! (东东农场)\n`;
 				}
 
 			} else if ($.treeState === 1) {
@@ -783,16 +783,16 @@ async function showMsg() {
 			} else {
 				TempBaipiao += `【东东农场】状态异常!\n`;
 				if (userIndex2 != -1) {
-					WarnMessageGp2 += `【账号${IndexGp2} ${$.nickName || $.UserName}】状态异常! (东东农场)\n`;
+					WarnMessageGp2 += `【${$.nickName || $.UserName}】状态异常! (东东农场)\n`;
 				}
 				if (userIndex3 != -1) {
-					WarnMessageGp3 += `【账号${IndexGp3} ${$.nickName || $.UserName}】状态异常! (东东农场)\n`;
+					WarnMessageGp3 += `【 ${$.nickName || $.UserName}】状态异常! (东东农场)\n`;
 				}
 				if (userIndex4 != -1) {
-					WarnMessageGp4 += `【账号${IndexGp4} ${$.nickName || $.UserName}】状态异常! (东东农场)\n`;
+					WarnMessageGp4 += `【${$.nickName || $.UserName}】状态异常! (东东农场)\n`;
 				}
 				if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
-					allWarnMessage += `【账号${IndexAll} ${$.nickName || $.UserName}】状态异常! (东东农场)\n`;
+					allWarnMessage += `【${$.nickName || $.UserName}】状态异常! (东东农场)\n`;
 				}
 				//ReturnMessage += `【东东农场】${$.JdFarmProdName}状态异常${$.treeState}...\n`;
 			}
@@ -806,31 +806,31 @@ async function showMsg() {
 	}
 	if ($.DdFactoryReceive) {
 		if (userIndex2 != -1) {
-			ReceiveMessageGp2 += `【账号${IndexGp2} ${$.nickName || $.UserName}】${$.DdFactoryReceive} (东东工厂)\n`;
+			ReceiveMessageGp2 += `【${$.nickName || $.UserName}】${$.DdFactoryReceive} (东东工厂)\n`;
 		}
 		if (userIndex3 != -1) {
-			ReceiveMessageGp3 += `【账号${IndexGp3} ${$.nickName || $.UserName}】${$.DdFactoryReceive} (东东工厂)\n`;
+			ReceiveMessageGp3 += `【${$.nickName || $.UserName}】${$.DdFactoryReceive} (东东工厂)\n`;
 		}
 		if (userIndex4 != -1) {
-			ReceiveMessageGp4 += `【账号${IndexGp4} ${$.nickName || $.UserName}】${$.DdFactoryReceive} (东东工厂)\n`;
+			ReceiveMessageGp4 += `【${$.nickName || $.UserName}】${$.DdFactoryReceive} (东东工厂)\n`;
 		}
 		if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
-			allReceiveMessage += `【账号${IndexAll} ${$.nickName || $.UserName}】${$.DdFactoryReceive} (东东工厂)\n`;
+			allReceiveMessage += `【${$.nickName || $.UserName}】${$.DdFactoryReceive} (东东工厂)\n`;
 		}
 		TempBaipiao += `【东东工厂】${$.ddFactoryInfo} 可以兑换了!\n`;
 	}
 	if ($.jxFactoryReceive) {
 		if (userIndex2 != -1) {
-			ReceiveMessageGp2 += `【账号${IndexGp2} ${$.nickName || $.UserName}】${$.jxFactoryReceive} (京喜工厂)\n`;
+			ReceiveMessageGp2 += `【${$.nickName || $.UserName}】${$.jxFactoryReceive} (京喜工厂)\n`;
 		}
 		if (userIndex3 != -1) {
-			ReceiveMessageGp3 += `【账号${IndexGp3} ${$.nickName || $.UserName}】${$.jxFactoryReceive} (京喜工厂)\n`;
+			ReceiveMessageGp3 += `【${$.nickName || $.UserName}】${$.jxFactoryReceive} (京喜工厂)\n`;
 		}
 		if (userIndex4 != -1) {
-			ReceiveMessageGp4 += `【账号${IndexGp4} ${$.nickName || $.UserName}】${$.jxFactoryReceive} (京喜工厂)\n`;
+			ReceiveMessageGp4 += `【${$.nickName || $.UserName}】${$.jxFactoryReceive} (京喜工厂)\n`;
 		}
 		if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
-			allReceiveMessage += `【账号${IndexAll} ${$.nickName || $.UserName}】${$.jxFactoryReceive} (京喜工厂)\n`;
+			allReceiveMessage += `【${$.nickName || $.UserName}】${$.jxFactoryReceive} (京喜工厂)\n`;
 		}
 
 		TempBaipiao += `【京喜工厂】${$.jxFactoryReceive} 可以兑换了!\n`;
@@ -839,16 +839,16 @@ async function showMsg() {
 	
 	if ($.PigPet) {
 		if (userIndex2 != -1) {
-			ReceiveMessageGp2 += `【账号${IndexGp2} ${$.nickName || $.UserName}】${$.PigPet} (金融养猪)\n`;
+			ReceiveMessageGp2 += `【${$.nickName || $.UserName}】${$.PigPet} (金融养猪)\n`;
 		}
 		if (userIndex3 != -1) {
-			ReceiveMessageGp3 += `【账号${IndexGp3} ${$.nickName || $.UserName}】${$.PigPet} (金融养猪)\n`;
+			ReceiveMessageGp3 += `【${$.nickName || $.UserName}】${$.PigPet} (金融养猪)\n`;
 		}
 		if (userIndex4 != -1) {
-			ReceiveMessageGp4 += `【账号${IndexGp4} ${$.nickName || $.UserName}】${$.PigPet} (金融养猪)\n`;
+			ReceiveMessageGp4 += `【${$.nickName || $.UserName}】${$.PigPet} (金融养猪)\n`;
 		}
 		if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
-			allReceiveMessage += `【账号${IndexAll} ${$.nickName || $.UserName}】${$.PigPet} (金融养猪)\n`;
+			allReceiveMessage += `【${$.nickName || $.UserName}】${$.PigPet} (金融养猪)\n`;
 		}
 
 		TempBaipiao += `【金融养猪】${$.PigPet} 可以兑换了!\n`;
@@ -876,30 +876,30 @@ async function showMsg() {
 					ReturnMessage += `【东东萌宠】${$.petInfo.goodsInfo.goodsName}已可领取!\n`;
 					TempBaipiao += `【东东萌宠】${$.petInfo.goodsInfo.goodsName}已可领取!\n`;
 					if (userIndex2 != -1) {
-						ReceiveMessageGp2 += `【账号${IndexGp2} ${$.nickName || $.UserName}】${$.petInfo.goodsInfo.goodsName}可以兑换了! (东东萌宠)\n`;
+						ReceiveMessageGp2 += `【${$.nickName || $.UserName}】${$.petInfo.goodsInfo.goodsName}可以兑换了! (东东萌宠)\n`;
 					}
 					if (userIndex3 != -1) {
-						ReceiveMessageGp3 += `【账号${IndexGp3} ${$.nickName || $.UserName}】${$.petInfo.goodsInfo.goodsName}可以兑换了! (东东萌宠)\n`;
+						ReceiveMessageGp3 += `【${$.nickName || $.UserName}】${$.petInfo.goodsInfo.goodsName}可以兑换了! (东东萌宠)\n`;
 					}
 					if (userIndex4 != -1) {
-						ReceiveMessageGp4 += `【账号${IndexGp4} ${$.nickName || $.UserName}】${$.petInfo.goodsInfo.goodsName}可以兑换了! (东东萌宠)\n`;
+						ReceiveMessageGp4 += `【${$.nickName || $.UserName}】${$.petInfo.goodsInfo.goodsName}可以兑换了! (东东萌宠)\n`;
 					}
 					if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
-						allReceiveMessage += `【账号${IndexAll} ${$.nickName || $.UserName}】${$.petInfo.goodsInfo.goodsName}可以兑换了! (东东萌宠)\n`;
+						allReceiveMessage += `【${$.nickName || $.UserName}】${$.petInfo.goodsInfo.goodsName}可以兑换了! (东东萌宠)\n`;
 					}
 				} else if ($.petInfo.petStatus === 6) {
 					TempBaipiao += `【东东萌宠】未选择物品! \n`;
 					if (userIndex2 != -1) {
-						WarnMessageGp2 += `【账号${IndexGp2} ${$.nickName || $.UserName}】未选择物品! (东东萌宠)\n`;
+						WarnMessageGp2 += `【${$.nickName || $.UserName}】未选择物品! (东东萌宠)\n`;
 					}
 					if (userIndex3 != -1) {
-						WarnMessageGp3 += `【账号${IndexGp3} ${$.nickName || $.UserName}】未选择物品! (东东萌宠)\n`;
+						WarnMessageGp3 += `【${$.nickName || $.UserName}】未选择物品! (东东萌宠)\n`;
 					}
 					if (userIndex4 != -1) {
-						WarnMessageGp4 += `【账号${IndexGp4} ${$.nickName || $.UserName}】未选择物品! (东东萌宠)\n`;
+						WarnMessageGp4 += `【${$.nickName || $.UserName}】未选择物品! (东东萌宠)\n`;
 					}
 					if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
-						allWarnMessage += `【账号${IndexAll} ${$.nickName || $.UserName}】未选择物品! (东东萌宠)\n`;
+						allWarnMessage += `【${$.nickName || $.UserName}】未选择物品! (东东萌宠)\n`;
 					}
 				} else if (response.resultCode === '0') {
 					ReturnMessage += `【东东萌宠】${$.petInfo.goodsInfo.goodsName}`;
@@ -908,16 +908,16 @@ async function showMsg() {
 					ReturnMessage += `【东东萌宠】暂未选购新的商品!\n`;
 					TempBaipiao += `【东东萌宠】暂未选购新的商品! \n`;
 					if (userIndex2 != -1) {
-						WarnMessageGp2 += `【账号${IndexGp2} ${$.nickName || $.UserName}】暂未选购新的商品! (东东萌宠)\n`;
+						WarnMessageGp2 += `【${$.nickName || $.UserName}】暂未选购新的商品! (东东萌宠)\n`;
 					}
 					if (userIndex3 != -1) {
-						WarnMessageGp3 += `【账号${IndexGp3} ${$.nickName || $.UserName}】暂未选购新的商品! (东东萌宠)\n`;
+						WarnMessageGp3 += `【${$.nickName || $.UserName}】暂未选购新的商品! (东东萌宠)\n`;
 					}
 					if (userIndex4 != -1) {
-						WarnMessageGp4 += `【账号${IndexGp4} ${$.nickName || $.UserName}】暂未选购新的商品! (东东萌宠)\n`;
+						WarnMessageGp4 += `【${$.nickName || $.UserName}】暂未选购新的商品! (东东萌宠)\n`;
 					}
 					if (userIndex2 == -1 && userIndex3 == -1 && userIndex4 == -1) {
-						allWarnMessage += `【账号${IndexAll} ${$.nickName || $.UserName}】暂未选购新的商品! (东东萌宠)\n`;
+						allWarnMessage += `【${$.nickName || $.UserName}】暂未选购新的商品! (东东萌宠)\n`;
 					}
 
 				}

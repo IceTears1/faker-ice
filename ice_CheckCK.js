@@ -191,7 +191,7 @@ if ($.isNode() && process.env.CHECKCK_ALLNOTIFY) {
             if (userIndex4 == -1 && userIndex2 == -1 && userIndex3 == -1) {
                 console.log(`账号没有分组`);
                 IndexAll += 1;
-                ReturnMessageTitle = `【账号${IndexAll}🆔】${$.UserName2}`;
+                ReturnMessageTitle = `【昵称：${$.UserName2}`;
             }
 
             await TotalBean();
